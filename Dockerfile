@@ -1,0 +1,5 @@
+FROM denoland/deno:latest
+WORKDIR /app
+COPY server.ts ./
+EXPOSE 8000
+CMD ["run", "--allow-net", "--allow-env", "server.ts"]
